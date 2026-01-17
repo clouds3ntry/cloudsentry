@@ -1,98 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>CloudSentry — Privacy-First Developer Tools</title>
-  <meta name="description"
-    content="Simple, privacy-first tools for developers. Fast utilities that run entirely in your browser. No tracking. No storage." />
-
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-85E4P2CW4E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-85E4P2CW4E');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSentry - Developer-First Cloud & Security Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-  <div class="container">
-
-    <!-- HERO -->
-    <header class="hero">
-      <h1>CloudSentry</h1>
-      <p>
-        Simple, privacy-first tools for developers<br />
-        Fast utilities that run entirely in your browser
-      </p>
-
-      <a href="https://hash.cloudsentry.in" class="cta" target="_blank" rel="noopener">
-        Use Hash Tool →
-      </a>
+<body class="bg-darker text-gray-100 font-sans">
+    <header class="bg-dark border-b border-gray-800 sticky top-0 z-50 backdrop-blur-sm bg-opacity-90">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M24 4L6 14V24C6 34.5 13.5 43.5 24 46C34.5 43.5 42 34.5 42 24V14L24 4Z" fill="url(#logoGradient)"/>
+                        <path d="M24 12C18 12 13 17 13 23V28C13 31 15 33 18 33H30C33 33 35 31 35 28V23C35 17 30 12 24 12Z" fill="white" fill-opacity="0.2"/>
+                        <circle cx="24" cy="26" r="3" fill="white"/>
+                        <path d="M24 29V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="text-xl font-bold text-white">CloudSentry</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#tools" class="text-gray-300 hover:text-white transition-colors">Tools</a>
+                    <a href="#why" class="text-gray-300 hover:text-white transition-colors">Why</a>
+                    <a href="#roadmap" class="text-gray-300 hover:text-white transition-colors">Roadmap</a>
+                    <a href="https://blog.cloudsentry.in" target="_blank" class="text-gray-300 hover:text-white transition-colors">Blog</a>
+                    <a href="#tools" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition-colors">Explore Tools</a>
+                </div>
+                
+                <button class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <!-- AVAILABLE TOOLS -->
-    <section id="tools">
-      <h2>Available Tool</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3># Hash</h3>
-          <p>Cryptographic hash generator</p>
-
-          <a href="https://hash.cloudsentry.in" class="tool-link" target="_blank" rel="noopener">
-            Open Tool →
-          </a>
+    <section class="relative overflow-hidden py-20 sm:py-32 lg:py-40">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block mb-6 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+                    <span class="text-primary font-medium text-sm">Developer-First Cloud & Security Platform</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    Build, Secure, and Operate <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Reliable Systems</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    Practical engineering insights, best-practice guides, and lightweight tools for developers and cloud engineers. Clean, fast, and content-first.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#tools" class="w-full sm:w-auto bg-primary hover:bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg shadow-primary/20">
+                        Use Tools
+                    </a>
+                    <a href="#roadmap" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all border border-gray-700">
+                        View Roadmap
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- COMING SOON -->
-    <section>
-      <h2>Coming Soon</h2>
+    <section id="tools" class="py-20 sm:py-24 bg-dark/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Developer Tools</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">Lightweight, privacy-first utilities built for modern cloud infrastructure and real-world use cases.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div class="bg-dark border border-gray-800 rounded-xl p-8 hover:border-primary/50 transition-all group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-white">Crono</h3>
+                        <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-semibold rounded-full border border-green-500/20">Live</span>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-6">Generate and validate cron expressions with an intuitive interface. Perfect for scheduling tasks and automation.</p>
+                    
+                    <a href="https://crono.cloudsentry.in" target="_blank" class="text-primary hover:text-accent font-medium transition-colors">
+                        Use Crono
+                    </a>
+                </div>
 
-      <div class="grid">
-        <div class="card">
-          <h3>⚙️ New Tool</h3>
-          <p>Coming soon</p>
-        </div>
+                <div class="bg-dark border border-gray-800 rounded-xl p-8 hover:border-primary/50 transition-all group">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-white">Hash</h3>
+                        <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-semibold rounded-full border border-green-500/20">Live</span>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-6">Generate and verify cryptographic hashes with multiple algorithms. Essential for security and data integrity.</p>
+                    
+                    <a href="https://hash.cloudsentry.in" target="_blank" class="text-primary hover:text-accent font-medium transition-colors">
+                        Use Hash
+                    </a>
+                </div>
 
-        <div class="card">
-          <h3>🔐 New Tool</h3>
-          <p>Coming soon</p>
+                <div class="bg-dark border border-gray-800 rounded-xl p-8 hover:border-gray-700 transition-all group opacity-75">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-bold text-white">Pwdx</h3>
+                        <span class="px-3 py-1 bg-yellow-500/10 text-yellow-400 text-xs font-semibold rounded-full border border-yellow-500/20">Coming Soon</span>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-6">Generate secure passwords and analyze password strength. Built with security best practices in mind.</p>
+                    
+                    <span class="inline-flex items-center text-gray-500 font-medium">
+                        Coming Soon
+                    </span>
+                </div>
+            </div>
         </div>
-
-        <div class="card">
-          <h3>🔗 New Tool</h3>
-          <p>Coming soon</p>
-        </div>
-      </div>
     </section>
 
-    <!-- WHY CLOUDSENTRY -->
-    <section>
-      <h2>Why CloudSentry</h2>
-      <ul class="why">
-        <li>Browser-only execution</li>
-        <li>No tracking, no storage</li>
-        <li>Built for speed</li>
-      </ul>
+    <section id="why" class="py-20 sm:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Why CloudSentry</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">Built by developers, for developers. Every tool is designed with privacy, performance, and practicality in mind.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 border border-primary/20">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Privacy-First</h3>
+                    <p class="text-gray-400">No data storage, no tracking. Everything runs client-side for maximum security.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 border border-primary/20">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lightweight & Fast</h3>
+                    <p class="text-gray-400">Minimal dependencies, instant loading. Built for speed and efficiency.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 border border-primary/20">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Built for Developers</h3>
+                    <p class="text-gray-400">Clean interfaces, keyboard shortcuts, and developer-friendly workflows.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-6 border border-primary/20">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Real-World Use Cases</h3>
+                    <p class="text-gray-400">Practical tools solving actual problems in modern cloud infrastructure.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-      CloudSentry © 2025
+    <section id="roadmap" class="py-20 sm:py-24 bg-dark/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Roadmap</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">We're constantly building new tools to help developers work smarter. Here's what's coming next.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <div class="bg-dark border border-gray-800 rounded-xl p-6 flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center border border-green-500/20">
+                            <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-white">Crono & Hash Tools</h3>
+                                <span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-semibold rounded-full">Completed</span>
+                            </div>
+                            <p class="text-gray-400">Cron expression generator and hash utility tools are now live and ready to use.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark border border-primary/50 rounded-xl p-6 flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center border border-primary/20">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-white">Pwdx - Password Utility</h3>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">In Progress</span>
+                            </div>
+                            <p class="text-gray-400">Secure password generation and strength analysis tool coming soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark border border-gray-800 rounded-xl p-6 flex items-start space-x-4 opacity-75">
+                        <div class="flex-shrink-0 w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700">
+                            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="text-lg font-bold text-white">More Developer Tools</h3>
+                                <span class="px-3 py-1 bg-gray-800 text-gray-400 text-xs font-semibold rounded-full">Planned</span>
+                            </div>
+                            <p class="text-gray-400">Additional utilities for cloud engineers, DevOps, and security professionals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark border-t border-gray-800 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M24 4L6 14V24C6 34.5 13.5 43.5 24 46C34.5 43.5 42 34.5 42 24V14L24 4Z" fill="url(#logoGradientFooter)"/>
+                            <path d="M24 12C18 12 13 17 13 23V28C13 31 15 33 18 33H30C33 33 35 31 35 28V23C35 17 30 12 24 12Z" fill="white" fill-opacity="0.2"/>
+                            <circle cx="24" cy="26" r="3" fill="white"/>
+                            <path d="M24 29V33" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="text-xl font-bold text-white">CloudSentry</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Developer-first cloud and security platform delivering practical tools and insights for modern infrastructure.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Tools</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://crono.cloudsentry.in" target="_blank" class="text-gray-400 hover:text-white transition-colors">Crono</a></li>
+                        <li><a href="https://hash.cloudsentry.in" target="_blank" class="text-gray-400 hover:text-white transition-colors">Hash</a></li>
+                        <li><a href="coming-soon.html" class="text-gray-400 hover:text-white transition-colors">Pwdx</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2026 CloudSentry. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
-  </div>
-
-  <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
